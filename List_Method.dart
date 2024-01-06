@@ -12,6 +12,7 @@ void main() {
   print("${mylist}");
 
   mylist.removeAt(2);
+  
   print("${mylist}");
 
   List<Map<String, dynamic>> mylistofmap = [

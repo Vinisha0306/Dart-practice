@@ -2,8 +2,18 @@ import 'dart:io';
 
 void main()
 {
-  List mylist=List.generate(5, (index) => 1);
+  stdout.write("Enter List Size:");
+    int n1=int.parse(stdin.readLineSync() ?? "0");
 
-  print("${mylist.toSet().toList()}");
+    List<int> mylist = List.generate(n1, (index) 
+    {
+      stdout.write("Enter ${index+1} value:");
+      return int.parse(stdin.readLineSync() ?? "0");
+    });
 
+  // print("${mylist.toSet().toList()}");
+
+  List<int> uniqueList=List.from(mylist.toSet());
+
+  print(uniqueList);
 }
