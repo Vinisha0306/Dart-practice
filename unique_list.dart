@@ -12,8 +12,9 @@ void main()
     });
 
   // print("${mylist.toSet().toList()}");
+  // List<int> uniqueList=List.from(mylist.toSet());
+  Set myset = Set.from(mylist.toSet());
+  mylist=List.from(myset.toList());
 
-  List<int> uniqueList=List.from(mylist.toSet());
-
-  print(uniqueList);
+  print(mylist);
 }
