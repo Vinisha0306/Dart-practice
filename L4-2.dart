@@ -25,6 +25,6 @@ void main()
   print("Name : ${o1.getname}");
 
   o2
-    ..name1 = "Aayushi"
+    ..name1 = "Vinisha"
     ..getname1();
 }
