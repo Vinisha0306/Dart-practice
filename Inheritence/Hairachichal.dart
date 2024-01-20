@@ -32,6 +32,7 @@ void main()
   B o1=B();
   C o2=C();
 
+  print("Class B Object:\n");
   stdout.write("Enter A:");
   o1.setA=int.parse(stdin.readLineSync() ?? "0");
 
@@ -39,6 +40,7 @@ void main()
   o1..setB=int.parse(stdin.readLineSync() ?? "0")
     ..sum();
 
+  print("Class C Object:\n");
   stdout.write("Enter A:");
   o2.setA=int.parse(stdin.readLineSync() ?? "0");
 
